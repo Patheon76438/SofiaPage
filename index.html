@@ -41,14 +41,27 @@
   </div>
 
   <script>
-    document.querySelector('.text').addEventListener('click', function () {
-      if (this.innerHTML.includes("Te Amo mucho")) {
-        this.innerHTML = "Recuerda no comer demasiados dulces: ya eres lo suficientemente dulce. <3";
-      } else {
-        this.innerHTML = "<span>Te Amo mucho!!!</span></br> SOFIII";
-      }
-    });
-  </script>
+     // JavaScript to simulate hover on touch
+     const textElement = document.querySelector('.text');
+
+     // Function to change text on hover or touch
+     const changeText = () => {
+       textElement.innerHTML = "Recuerda no comer demasiados dulces: ya eres lo suficientemente dulce. <3";
+     };
+
+     const resetText = () => {
+       textElement.innerHTML = "<span>Te Amo mucho!!!</span><br> SOFIII";
+     };
+
+     // Touchstart and touchend events for mobile
+     textElement.addEventListener('touchstart', changeText);
+     textElement.addEventListener('touchend', resetText);
+
+     // Mouse hover events
+     textElement.addEventListener('mouseover', changeText);
+     textElement.addEventListener('mouseout', resetText);
+   </script>
+
 </body>
 
 </html>

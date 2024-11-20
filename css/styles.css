@@ -193,7 +193,7 @@
       display: none;
     }
 
-    .text:hover:before,
+    /*.text:hover:before,
     .text:active:before {
       content: "Recuerda no comer demasiados dulces: ya eres lo suficientemente dulce. <3";
       font-size: 25px;
@@ -239,7 +239,7 @@
   display: none;
 }
 
-.text:hover:before,
+/*.text:hover:before,
 .text:active:before {
   content: "Recuerda no comer demasiados dulces: ya eres lo suficientemente dulce. <3";
   font-size: 25px;
